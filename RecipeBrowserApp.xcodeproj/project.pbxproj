@@ -105,6 +105,9 @@
 		B065C3A7281781FA00A0B984 /* RecipeBrowserApp */ = {
 			isa = PBXGroup;
 			children = (
+				B065C3E1281C380300A0B984 /* Views */,
+				B065C3DE281C317400A0B984 /* ViewModels */,
+				B065C3DD281C2EDE00A0B984 /* Networking */,
 				B065C3A8281781FA00A0B984 /* AppDelegate.swift */,
 				B065C3AA281781FA00A0B984 /* SceneDelegate.swift */,
 				B065C3AE281781FA00A0B984 /* Main.storyboard */,
@@ -130,6 +133,39 @@
 				B065C3CB281781FC00A0B984 /* RecipeBrowserAppUITestsLaunchTests.swift */,
 			);
 			path = RecipeBrowserAppUITests;
+			sourceTree = "<group>";
+		};
+		B065C3DC281C2ECE00A0B984 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B065C3DA281C28B200A0B984 /* DessertMeals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B065C3DD281C2EDE00A0B984 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B065C3DC281C2ECE00A0B984 /* Models */,
+				B065C3D8281C264B00A0B984 /* TheMealAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B065C3DE281C317400A0B984 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B065C3DF281C31A600A0B984 /* DessertMealsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B065C3E1281C380300A0B984 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B065C3AC281781FA00A0B984 /* DessertMealsTableViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
