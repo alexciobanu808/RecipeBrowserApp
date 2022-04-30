@@ -12,7 +12,6 @@ class DessertMealsTableViewController: UITableViewController {
     var cancellables = Set<AnyCancellable>()
     let dessertViewModel  = DessertMealsViewModel()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         dessertViewModel.fetchDessetMeals()

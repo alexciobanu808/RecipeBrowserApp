@@ -9,7 +9,6 @@ import Foundation
 
 class DessertMealsViewModel {
     @Published var uiModel: Result<[String], TheMealAPIError>?
-    @Published var isLoading = false
     
     private let api = TheMealAPI()
     
@@ -24,6 +23,5 @@ class DessertMealsViewModel {
         api.getDessertMeals { [weak self] response in
             self?.uiModel = response.map { $0.meals.map(\.name).sorted() }
         }
-        
     }
 }
