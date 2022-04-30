@@ -17,6 +17,7 @@
 		B065C3CA281781FC00A0B984 /* RecipeBrowserAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3C9281781FC00A0B984 /* RecipeBrowserAppUITests.swift */; };
 		B065C3CC281781FC00A0B984 /* RecipeBrowserAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3CB281781FC00A0B984 /* RecipeBrowserAppUITestsLaunchTests.swift */; };
 		B065C3D9281C264B00A0B984 /* TheMealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3D8281C264B00A0B984 /* TheMealAPI.swift */; };
+		B065C3DB281C28B200A0B984 /* DessertMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3DA281C28B200A0B984 /* DessertMeals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B065C3C9281781FC00A0B984 /* RecipeBrowserAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBrowserAppUITests.swift; sourceTree = "<group>"; };
 		B065C3CB281781FC00A0B984 /* RecipeBrowserAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBrowserAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B065C3D8281C264B00A0B984 /* TheMealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealAPI.swift; sourceTree = "<group>"; };
+		B065C3DA281C28B200A0B984 /* DessertMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertMeals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 			files = (
 				B065C3AD281781FA00A0B984 /* ViewController.swift in Sources */,
 				B065C3D9281C264B00A0B984 /* TheMealAPI.swift in Sources */,
+				B065C3DB281C28B200A0B984 /* DessertMeals.swift in Sources */,
 				B065C3A9281781FA00A0B984 /* AppDelegate.swift in Sources */,
 				B065C3AB281781FA00A0B984 /* SceneDelegate.swift in Sources */,
 			);
