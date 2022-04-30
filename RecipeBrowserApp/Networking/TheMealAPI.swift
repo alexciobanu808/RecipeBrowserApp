@@ -24,8 +24,33 @@ class TheMealAPI {
             if let error = error {
                 completionHandler(.failure(.network(error)))
             } else if let data = data {
-                do {    
+                do {
                     let decodedResponse = try JSONDecoder().decode(DessertMeals.self, from: data)
+                    completionHandler(.success(decodedResponse))
+                } catch {
+                    completionHandler(.failure(.decoding))
+                }
+            } else {
+                completionHandler(.failure(.unknown))
+            }
+        }.resume()
+    }
+    
+    func getMealDetails(mealId: String, completionHandler: @escaping (Result<MealDetails, TheMealAPIError>) -> Void) {
+        let urlString = baseURL + "lookup.php?i=" + mealId
+        
+        guard let url = URL(string: urlString) else {
+            completionHandler(.failure(.invalidURL))
+            return
+        }
+        
+        let session = URLSession.shared
+        session.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                completionHandler(.failure(.network(error)))
+            } else if let data = data {
+                do {
+                    let decodedResponse = try JSONDecoder().decode(MealDetails.self, from: data)
                     completionHandler(.success(decodedResponse))
                 } catch {
                     completionHandler(.failure(.decoding))
