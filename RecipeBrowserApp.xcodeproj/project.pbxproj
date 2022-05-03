@@ -19,7 +19,7 @@
 		B065C3D9281C264B00A0B984 /* TheMealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3D8281C264B00A0B984 /* TheMealAPI.swift */; };
 		B065C3DB281C28B200A0B984 /* DessertMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3DA281C28B200A0B984 /* DessertMeals.swift */; };
 		B065C3E0281C31A600A0B984 /* DessertMealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3DF281C31A600A0B984 /* DessertMealsViewModel.swift */; };
-		B065C3E7281DD37A00A0B984 /* MealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3E6281DD37A00A0B984 /* MealDetails.swift */; };
+		B065C3E7281DD37A00A0B984 /* MealDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3E6281DD37A00A0B984 /* MealDetailsResponse.swift */; };
 		B065C3E9281DDE7A00A0B984 /* MealDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065C3E8281DDE7A00A0B984 /* MealDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
