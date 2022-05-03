@@ -8,20 +8,20 @@
 import Foundation
 
 class DessertMealsViewModel {
-    @Published var uiModel: Result<[String], TheMealAPIError>?
+    @Published var uiModel: Result<[DessertMeals.MealDetails], TheMealAPIError>?
     
     private let api = TheMealAPI()
     
-    var desertNames: [String] {
+    var meals: [DessertMeals.MealDetails] {
         switch uiModel {
-        case .success(let names): return names
+        case .success(let meals): return meals
         case .failure, .none: return []
         }
     }
     
     func fetchDessetMeals() {
         api.getDessertMeals { [weak self] response in
-            self?.uiModel = response.map { $0.meals.map(\.name).sorted() }
+            self?.uiModel = response.map { $0.meals }
         }
     }
 }
