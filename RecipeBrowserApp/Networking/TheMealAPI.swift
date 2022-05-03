@@ -36,7 +36,7 @@ class TheMealAPI {
         }.resume()
     }
     
-    func getMealDetails(mealId: String, completionHandler: @escaping (Result<MealDetails, TheMealAPIError>) -> Void) {
+    func getMealDetails(mealId: String, completionHandler: @escaping (Result<MealDetailsResponse, TheMealAPIError>) -> Void) {
         let urlString = baseURL + "lookup.php?i=" + mealId
         
         guard let url = URL(string: urlString) else {
@@ -50,7 +50,7 @@ class TheMealAPI {
                 completionHandler(.failure(.network(error)))
             } else if let data = data {
                 do {
-                    let decodedResponse = try JSONDecoder().decode(MealDetails.self, from: data)
+                    let decodedResponse = try JSONDecoder().decode(MealDetailsResponse.self, from: data)
                     completionHandler(.success(decodedResponse))
                 } catch {
                     completionHandler(.failure(.decoding))
