@@ -113,7 +113,6 @@
 		B065C3A7281781FA00A0B984 /* RecipeBrowserApp */ = {
 			isa = PBXGroup;
 			children = (
-				B065C3EE282021FB00A0B984 /* Extensions */,
 				B065C3E1281C380300A0B984 /* Views */,
 				B065C3DE281C317400A0B984 /* ViewModels */,
 				B065C3DD281C2EDE00A0B984 /* Networking */,
@@ -178,13 +177,6 @@
 				B065C3EC281DF9FB00A0B984 /* MealDetailsViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		B065C3EE282021FB00A0B984 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
