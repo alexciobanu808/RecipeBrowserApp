@@ -173,8 +173,8 @@
 		B065C3E1281C380300A0B984 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B065C3AC281781FA00A0B984 /* DessertMealsTableViewController.swift */,
 				B065C3EC281DF9FB00A0B984 /* MealDetailsViewController.swift */,
+				B065C3AC281781FA00A0B984 /* DessertMealsTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

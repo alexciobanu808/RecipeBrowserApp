@@ -27,10 +27,10 @@ class MealDetailsViewController: UIViewController {
         
         mealDetailsViewModel?.$uiModel
             .receive(on: DispatchQueue.main)
-            .sink { _ in
-                self.title = self.mealDetailsViewModel?.mealDetails?.strMeal ?? ""
-                self.mealInstructionsLabel.text = self.mealDetailsViewModel?.mealDetails?.strInstructions ?? ""
-                self.ingredientsAndMeasurementLabel.text = self.mealDetailsViewModel?.ingredientsAndMeasurementsString ?? ""
+            .sink { [weak self]_ in
+                self?.title = self?.mealDetailsViewModel?.mealDetails?.strMeal ?? ""
+                self?.mealInstructionsLabel.text = self?.mealDetailsViewModel?.mealDetails?.strInstructions ?? ""
+                self?.ingredientsAndMeasurementLabel.text = self?.mealDetailsViewModel?.ingredientsAndMeasurementsString ?? ""
             }
             .store(in: &cancellables)
     }
