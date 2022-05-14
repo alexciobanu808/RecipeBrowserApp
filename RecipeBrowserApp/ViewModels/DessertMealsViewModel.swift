@@ -9,6 +9,7 @@ import Foundation
 
 class DessertMealsViewModel {
     @Published var uiModel: Result<[DessertMeals.MealDetails], TheMealAPIError>?
+    @Published var isLoading = false
     
     private let api = TheMealAPI()
     
@@ -20,8 +21,10 @@ class DessertMealsViewModel {
     }
     
     func fetchDessetMeals() {
+        isLoading = true
         api.getDessertMeals { [weak self] response in
             self?.uiModel = response.map { $0.meals }
+            self?.isLoading = false
         }
     }
 }

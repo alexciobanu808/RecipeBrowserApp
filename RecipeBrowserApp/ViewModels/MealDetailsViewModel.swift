@@ -9,6 +9,7 @@ import Foundation
 
 class MealDetailsViewModel {
     @Published var uiModel: Result<MealDetailsResponse, TheMealAPIError>?
+    @Published var isLoading = false
     
     private let mealID: String
     let mealPictureURL: String
@@ -38,8 +39,10 @@ class MealDetailsViewModel {
     
     
     func getMealDetails() {
+        isLoading = true
         api.getMealDetails(mealId: mealID) { [weak self] response in
             self?.uiModel = response
+            self?.isLoading = false
         }
     }
 }
